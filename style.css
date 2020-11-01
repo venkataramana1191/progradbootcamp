@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    background:#9013ef ;
+    justify-content: center;
+    height:80vh;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 700px;
+    margin-top: 100px;
+    border-radius:15px;
+    border: 5px thick black;
+    height: 65vh;
+}
+
+.container > .row{
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.row{
+    display: flex;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    font-size: xx-large;
+}
+
+.score > span {
+    margin: 0px 5px;
+}
+
+.logo >img{
+    
+    width: 150px;
+    height: 150px;
+    border: 3px solid bisque;
+    border-radius:80px ;
+    
+}
+.profile-name{
+    margin: 20px 0px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.round-runs{
+    font-size: xx-large;
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.round-runs > span{
+    border:3px solid red;
+    border-radius: 50px;
+    width:20px;
+    height: 20px;
+}
+
+#bat-button{
+    font-size: x-large;
+    width: 200px;
+    background: linear-gradient(135deg,rgb(17, 218, 233),rgb(233, 160, 24));
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.result{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
