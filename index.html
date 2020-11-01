@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Prograd boot camp</title>
-        <meta name="description" content="super over page wich is designed for the practise">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        
-      
-      <div class="container">
-          <div class="row">
-              <div class="col">
-                <div class="logo">
-                  <img src="./assets/madrid.png" alt="csk-logo">
-                  </div>
-                  <span class="profile-name">Real Madrid</span>
-                  <div class="row round-runs">
-                      <span class="col"></span>
-                      <span class="col"></span>
-                      <span class="col"></span>
-                      <span class="col"></span>
-                      <span class="col"></span>
-                      <span class="col"></span>
-                  </div>
-                
-              </div>
-              <div class="col">
-                <div class="row score">
-                    <span>0</span>
-                    <span>-</span>
-                    <span>0</span>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super strike</title>
+
+    <!-- Css is used for styling -->
+    <link rel="stylesheet" href="./super strike_files/style.css">
+    
+</head>
+<body data-new-gr-c-s-check-loaded="14.981.0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="./assets/madrid.png" alt="Real Madrid">
+                <span class="profile-name" id="team-1-name">Real Madrid</span>
+                <div class="row round-runs" id="team-1-round-runs">
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
                 </div>
             </div>
-              <div class="col">
-               <div class="logo">
-                 <img src="./assets/heusca.png" alt="mi-logo">
-               </div>
-               <span class="profile-name">Huesca</span>
-                 <div class="row round-runs">
-                     <span class="col"></span>
-                     <span class="col"></span>
-                     <span class="col"></span>
-                     <span class="col"></span>
-                     <span class="col"></span>
-                     <span class="col"></span>
-                 </div>
-               </div>
-          </div>
-         
-          <div class="row">
-            <button id="try-again">Try Again</button>
-            <button id="strike-button">real madrid strike</button>
-          </div>
-          <!-- <div class="row" >
-            <span class="result">CSK / MI Wins</span>
-        </div> -->
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score">0</span>
+                    <span>-</span>
+                    <span id="team-2-score">0</span>
+                </div>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="./assets/heusca.png" alt="Heusca Logo" width="150px" height="150px">
+                <span class="profile-name" id="team-2-name">Heusca</span>
+                <div class="row round-runs" id="team-2-round-runs">
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                    <span class="col"></span>
+                </div>
+            </div>
         </div>
-        
-      </div>
-        <script src="" async defer></script>
-    </body>
-</html>
+
+        <div class="row">
+            <a href="./index.html"><button id="tryagain-button">Try Again</button></a>
+            <button id="bat-button" onclick="handleStrikeButton()">Real Madrid  Strike</button>
+        </div>
+        <div class="row" id="result" hidden=""></div>
+       
+    </div>
+
+    <!-- Including JS File -->
+    <script src="./App.js"></script>
